@@ -657,15 +657,18 @@ def about():
      screen1=Canvas(screen1,width=1500,height=800,bg='light green') 
      screen1.pack()
      screen1.create_text(640,300,text='''\t\tDescription of the game:
-             The game is played on two grids, one for each player. The grids are
-             typically square – usually 8*8 – and the individual squares in the grid are
-             identified by letter and number.Before play begins, each player secretly arranges
-             their ships on their grid. Each ship occupies a number of consecutive squares on
-             the grid, arranged either horizontally or vertically. The number of squares for each ship
-             is determined by the type of the ship. The ships cannot overlap (i.e., only one ship
-             can occupy any given square in the grid). The types and numbers of ships
-             allowed are the same for each player.
-             They are: BATTLESHIP-3,SUBMARINE-2,PATROL BOAT-1
+               The game of Battleship is played on two square grids, one for each player. 
+               The grids are typically 8x8, and each square is identified by a letter and 
+               number coordinate. Before the game  begins, each player secretly  arranges 
+               their ships on their grid. The ships come in three different types: 
+               Battleship (3 squares), Submarine (2 squares), and  Patrol Boat (1 square). 
+               The number of ships of each type is the same for both players.
+               The ships must be placed so that they do not overlap, and each ship occupies
+               a consecutive set of  squares  either  horizontally  or vertically. Once all 
+               ships are placed, the  game begins  with  each player taking turns trying to 
+               guess the location of their opponent's ships by  calling out  coordinates on 
+               the grid. A hit is scored if the guess lands on a square occupied  by a ship, 
+               and the player who sinks all of their opponent's ships first wins the game.
     ''',font=('courier',20),fill='black') 
 
      
@@ -677,15 +680,12 @@ def play():
     screen1.pack()
     screen1.create_text(640,300,text='''\t\tHow To Play: 
              After the ships have been positioned, the game proceeds in a series of rounds.
-             In each round, each player takes a turn to announce a target square in the
-             opponent's grid which is to be shot at. When all of the squares of a ship have been hit,
-             the ship's owner announces the sinking of the BATTLESHIP,
-             SUBMARINE/PATROL BOAT, or the titular Battleship. If a player's ships
-             have been sunk, the game is over and their opponent wins. the who gets 6 points first
-             wins the game.''',font=('courier',20),fill='black') 
+             In  each  round, each  player takes a turn to announce a target square in the
+             opponent's grid which is to be shot at. When all of the squares of a ship have 
+             been hit, the ship's owner announces the sinking of the BATTLESHIP, SUBMARINE/
+             PATROL BOAT, or the titular Battleship. If a player's ships have been sunk,the 
+             game is over and their opponent wins. the who gets 6 points first wins the game.''',font=('courier',20),fill='black') 
 
-    
-          
 def main_screen(): 
     global screen
     screen=Tk() 
