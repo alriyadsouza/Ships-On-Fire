@@ -1,19 +1,19 @@
 # Battleship Game
 
-Welcome to the Battleship game project! This is a classic two-player strategy game where you'll be arranging your ships and attempting to sink your opponent's fleet. We invite you to contribute to this open-source Python project to enhance the gameplay and bring new features to the table.
+Welcome to the Battleship game project! This is a classic single-player strategy game where you'll be arranging your ships and attempting to sink the computer's fleet. We invite you to contribute to this open-source Python project to enhance the gameplay and bring new features to the table.
 
 ## Rules of the Game
 
 Before you start contributing, it's important to understand the rules of Battleship:
 
-- The game is played on two square grids, one for each player, typically 8x8 in size.
-- Each player secretly arranges their ships on their grid. There are three ship types:
+- The game is played on two square grids, one for the player and one for the computer, typically 8x8 in size.
+- The player secretly arranges their ships on their grid. There are three ship types:
   - Battleship (3 squares)
   - Submarine (2 squares)
   - Patrol Boat (1 square)
-- The number of ships of each type is the same for both players.
+- The computer also arranges its ships secretly.
 - Ships must be placed without overlapping and occupy consecutive squares either horizontally or vertically.
-- The game begins with players taking turns guessing the coordinates to target their opponent's ships.
+- The game begins with the player taking turns guessing the coordinates to target the computer's ships.
 - A successful hit results in the announcement of the sinking of that ship.
 
 ## How to Contribute
